@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFusion - The best fitness gym in the town</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">FitFusion</div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="dumbellimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABHVBMVEX///86OT/3lB3///3//v84Nz0tLDK2trc6OT46OUE1NDv///z8//9CQUZwcHNFREry8vMwLzb4kx1ZWVq/v8D///jf39+Tk5b///TsmzVEREbS0tPswXc2NTn1lR4iIScWFB+JiYtpaWsbGiGsrK2dnZ76kgTm5udhYWPsvYd8fH7u7u7V1dUpJy7++vH016jpsGMAAAD//evplCb45sURDxb2hwD99eXykTPpunfsnUL88tXojRD4577oo0zz1J/sw4LlrFX12rPxvm3s1rQCABD/8tDyy5Hjx5romivlwHxRUVTsmEPiolL96tflkCvtq2nolDr2xJPkqm3zpl3thRX67+Dxu3/sjCXigwj4tGX7z4/ynlP/igbej0DeapafAAAQv0lEQVR4nO1ciV8aSRautrqxj0KhpZFoAA2Imgi4CO0B0YyT0WTVqIlEdtfZ///P2Peq+kRQnA3H+KsvGqH6qq/fq3dUvW5CJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTGBUoZsWoOYRaddlfGAQr86Nnh0ZujwzYl6ivkCPyseqdiz9lznboDhKfdoV8Pyj525gQ6H1+jECnJHVcKyM+2K8eN18iQnYCCwk8B/s3VyWtiKIYca3ydswtciAW78KaBba9GkIxSi7JPIDubD0MgWvkEQqSvRpCqCv+1O6igATptZr0agtwXOrt2SA+kOLfrMPJafAayQE9he0qK/ECIp8RSrWn37dehcWzbBV9L8U/hb+UxQNfoE/pmwbbzylw/KueEqk+fddYwtLsWa3+1HzG09xqT7N1fx2ZWIDXUMgLzw8ciBD09fMqYprzzbo6l1y/A6j9KHK2lod212Fkn6ihCj3HGhhwCGrrUEif+x+q4uj4i5hO6osOPsjh0F5b7rTKAIFieK2f4iZNwTkQiM4ZevwSZqqIYBvwMYwiSPQ1FGDLlAdzp8BMnNYMzrGb4AIeUcrIBQiahI/L6gsn7oWgDGVK0sY2j0MwU5n4v2J4EgeJRgxEyuOe+DM2FfJ5fqZiZKMVyQtOAlqJ5BAczpBQDNvQUtk9wt7ErBAkxHKRRJ5juDzTCHkNd8a5gJMpj5hRHOQ2KiVCeYshvensvYj87TdbsFLywBv58/cmGuFJfhj6MdIThU+73/0NmWaBczitGrANDZMiotVtBvRSMeEpxWLG5puL/ld+tIbFbH0MDGJa9q2fGFw2oiTRH4gIYKiMwFFMX9pyXVth7bWhp7NneWISfTnPItfplqKTLi97l82OMdzxexsXGSAyBTu64wFNeLsbKCZC2yEnEpNq/OYPTxIChGA26kt9Y9K81LnohQ2Vx2TRGYUhYvRNwKdjHOT6A0LgG5rVTH3ypRzI0l5MeZW2MQasvw+S6aejPMwSNfFOxPStawCk23jN2Ct6w4DXbbxoDI5vHDNcnx1BXjPcjMVTZp4qvkXahsmsx3jHV2Y2Gp+cDL/WY4Xt9cgwNY2EkLWXgKUJvv9dmqt/eCZJhG9pHYqgtTI6hYuhb2igMHfAUoQg/hd0C2RZCIe4OchePGW5NkqFyEb86j0tjF1XBZpImisrmU2x2ZLypKngMHIo4GuEHPIb6qM9JpR+LE2T4GI8Y4jfnCChwjgXuKYJNDDxGxQ5xlIPI4FmGwbWmwlDRVmIMcV6DnVREgG0XuKcgzN8DtuWu3oTY+ww2KGZR6Uwy7AcPSAvIEfAodnFyEQzIE1e0GWOoKAtxvCefbFuEZhjNHFoLL8PwC02NoRnDH6tne3waXwTZe+1yMdiWh3/9eNSi4NTBbDH0IPplLpDf/AwJc4rzVPX5Q0fEtBkKtD6cRgPSo9x6+hUxhLQ4sewchXGZ3alni7+M4NQZYt6v5VmYIUEecUWWzOeP/PswVPRiptEpBAGp3TnLFIdYjb8lQ93QlshhuNJUmHtL+uP0EDpO9ejhwTPLUFe0RIDWzplvZgp8fWKjlXgxlKE3ZSoMYegtqqkAzlXEzMydkw+pl2OxP7eYOsNo1OZ7Cu7xjxqEDF0JpV+2I2iysOMzFpcaihFG3qzxJlzsLXROvanvgWD1SgTRCY1H+eG0GPrzX0H2xJdDw8S+sut4rYMZOr/ZhWBRo3JOAopJo+8KU2KobT1at2DtIJrBqbSzIesSApQ1o7HPXjuoQUkqwtaYW5qixMzOZBmafSszFJLAw2CGArT0MPf0Ga1w94JYNPUmc0BLOa00v8IUGfrxJjCkjK/ENDuRFe29/WGLoD5YsK7BY4Qm8ZZq/HGYXp8uw/RyhCFVGdbnhauEduWEPV1RAneFnPiTVUjyOKfiakfA0EjwK0yR4UZVD7SUqtTiAWnBT5yOc+yZrlBeieIzhOPqxOJVKD7D6sZ0GSbmiyLo4uMQl0PfRGfsm88R5OsYvvvkaxtvGoRZEYYlXEefIENTEzANQ8dct5opBVrKreAnv+oCJxF3nRE6Ahx37cgy+DlxSKilSilTNXg8rwTXzo+JHWI9ucKx9I7PExlGlCFVHXa2F6YUojpvlKXpsw54Cj9Q32uziJbqpdUq1gnAFd4tiYuvrI+RYYD3JldOPbETYUgpSCMUBi6HjlhgGS5vwBje9fyhJ8OdBC6UKIb5fryU+vA+zSdk9Hw2qqVhJTfmFNdY8zTaevT+1/DO2J2PKPqAYTYhRh8wnGSlwnqpWEUUN1vC0iFDBlbRS3yxTq/OOL+natd8gAUOYNvHjXAc6q1N71KliSinB/BYqx5SEYZETHJ7AE+Brm0UgipFLxqggoumAUPqX2qUM40B2ZLBC4Yge2Ltr5Vw7gJ0bXSlomEkVMBF0zYjKxoffUYxO8bej4L5Na94YYU4YC+CxZbKofMCn2VR59BbqkGvWPnkkKQ4b3pt2lVf6oZXArJKav98+/bwrY99NnoBMOgya4eHvn37zwZZ9c67MSXlHAAusojYXlCJDySccG9qEWs2y6MxALN4Po9kwYg+l1YEsHhZnjiSqqLCXZ3BGmFex0b9Ty8KHVGjhTYCP548jRorSEhISLwGcIPnz/gON5+hs6P9Ld5n/xTR5sdHTQthFcnQPZ7v4vjqfl+Mzfk+pAhZxb+bhGT6Nqli753g4Cx8K8MBqf6TbOJ9Ulfjjav87mX7dh0zP0rKxfg6WBE6fFFNJP4Ahq10dEv1gpByCf7mg+ByGQ5eS1GSWYufpIUpRKYYP3VpAxo/XJRijXjSsRKkfAYjAm0LJAJ5uJYE8baU6IKKCUkrn9Ctlv3bs6QpJj5esxyvXNB0uAebfKU4PN5YQ9oX+fgSTXp57AyT5qMr7hQVw1zAJ2hi837VeVHbpGv5lDharXLelGzFT2K+Q9YJTDQ1f05NM1E7MAGFOxCiOPZ06kMrHwNeEZgpaVCp9QQ0iIIazTTNUpaoLc4g4d14rMlI4EDK48NEfk2QrudRHy/gZpgrSyEWgPZGGhjmI40XU3nW6z3oXMl/BCsDX8wN78tqScxyFEW/8Fa0NgcH1VhU1F+mSgkuzJR2Bu0/NmQzgL6phaRmGC1PEQku1gSqJObkdSW/wL/ybbBPdh5Oshp3IqtFLHXuvxxOsxcnm2e8K1WrrbjFTrUUw7/7lCubR1dMrJp8ZpffFNhmgmUi63CSUp/JKKOq9z/686GFS4iTZYjyKsbHAt79tH/31RKMrmDiHQyNtrWIA2wJt7U8W7hl4nx5/MR4M0r9806ZohjhE8RmCYZV38rBRloP7/7OGi/c42k++QBGNjFfRiOJ43RnTecPFKpp0Nxq3wwM+Am9mMlmYw+PLsOtSC9vBq1jn7Wh/KYayfcCC5tEWAMQq28NyjDUgufMULqwJc/rUQg3jCj/7Bqa0C2BpQ9811QLLWt1zccfF8jmHap4Omhca43b6IDT4o5M1ICmvVgFn4YsBSMvbyhF366ioUmk4LagOS2DIhoayn8en8v0K1K9AfxBzC17T8TBL7dWS6YRQpnI6oXvqvGK4Kd530q6oQWxFLr4qk8XRMC34FF6Xl3UeGAgwiKPYDCAl8TsPSKBs8F8nJZbQWMV54jHz1DNA4F80Xu8eZkbOVBFI73u2TsYeUpAV9U1DGEs8PRwWAIjuAT37SaM5a13HFuBXV7N+JjnPoKPxGzQmFnSIvo/NmBQoi2qRAXAf5zVsqljgCYYoovPr0f2Flt4RQP+ogKnEoah558yGkkwwY8eUVvPT8L54whCTYnmvO+AYTHrMcSRV/XFAmbJEA4AY3MesiYw1yoaWMA4HJvgcbwhEMFFnuv/mH0jjqCopmBSp/Exxr9RbvyC1ZT1NGijkFW5yh+p5XYFfbsZXyyLdxvrUVGd1egOPKobc+pERHRcjGtKFjwkplCEM9RxnPqGZskLYRBJvjDOLQXGmk+mCOuoFf3PbvOobuyLiCms1w4spUCmCobGj8A2i0pIClXT9LfwGFxkijo3OxsB0LeEswPl+TIvggA3uQOfg3a8uYlxJ/hkdYCmrKd1I5BIJnqjMW30tlDPeeOoRHMLdj+dzosFtBJGOQnvIV9cqUOLZOJVFqrpsBl1oDX21GnACAJVjASqscQC926JiAX0F8RrcEOT4c9ehKkyj3JKShzVDXz4SYvXYMLNffKNL78AC5CAV/sSiwQMtqR/3SVT00t+Aghpo6kTnyHk8BqPvzcSmKsbYdquchsdyeM1M5FMobC1GMzW6tizjCQgEY//d/LQ5kcaKX0lmQzKhS9gy0K4Z2olqeOofJeMA8P0dT3WtLSMY301H2u8WJhsJjx2DJHW9KdVYx3o6070Kw3R/z2y26PWGZo4filmteODbymN/PmrPR9e/j5heAUKuL5NxQPL4sfyaxV46TDjL2Xl/1R+DNZLWeI7ZQS3YyOeTFhlOuydJ1OCihUGVBUVBhZhKrGYxZjFm/GHeOVR/JOq8u77RetUtfD9u4w5QBv+8kIMlc0UQf4SE4LP8zo5B3pcy1nEyvGP2Aa9zuUs79W68GvhfjksKM7lUMDwAZrgljg5vAm40ck9W108WYBOsfrlwd7e3nWTkNzV9TdmbV9/BmZX13WQZ+MY27F+WyVs/wF3vG3Dp9vjBs9O2On1NiHOze1POOSmd93r3R7tT5tUHCpp3LqXDw+XV20gdO9+Z6fufY6Q/a57D5u33e435ivzvXsAO941CGm6d46wVd/d74TUDg5AcrUfdwDb/TZyOc4kAOPorPuQo9TJYX+/uQ/t3mUDRNZ07QeLtbvuZU0MLBibD92PoImOapGTP7e90XjTbRLW7N7Ax5+7XyyaO+jN2Bv5LJSZ9e3bt30USe6oe9lr4/utz7v2QcO667k/LKGOhDR6B+IpE+DlnooPjevePmF19xw0ue7etNun7s0T73KbAsCMbrun7X+5oGwoku9ut87f83V3+e/u2am72/Vf0QJi7d7BcLTAfjqXXe+1Jt+6D0Do3v3MiHXv9v7V69qns2VMKXGu3J+15q77Gf0BCPSOvxwpd3Bz7v7n9vKkK949h86w7n4SE+Ks0b0Fo4ue8/Of95Q5DzZYF6D9cX//0P0yUnHxxEDJ/l4vR6wbd59/Q8MBbpG0u9+bbq/b/A5KSEQ1nnMPqkkdoMWa7g0IEiW17dYJbfduwbHs9675iZozZWjgzrdd++7fx/ZRDkMXCh3k3r3ufgZr+oM8HFk8pEEH+fAn2txtYPb9zx58+gzxzzG3w+4PyoB27+7uwT3Yny0ZMvLz9gBxz2OV2hV0EKOb77f71uXlfuO/9yKIwZd/3eB+vS8QwhzyT01GrR/86Et8xOYLP8/tNp0xGao0l6sBHAwyiVOrWQzVtFajVq3GrJr38AwGNE4N9wR9dGocGKtZ+EG84cRp8FZrxqovo/mcr11oClmgauEezN+MxpbxhnhKOc6O/mXQWMlrkK96v9E8SLR7L01Sxa5EfPa24VuW1BlNdMNM3Bt0xE+G+orZqCWyjUB1w2o3GqacM0axP18VxFRPNpG9+DauqYzFE2j+gI0a3J6ZFCKJCsFTOdEa3UWlwZ7RrXA7xMtmRRn8TPkKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQmJX4f/AbOotSpQvE7YAAAAAElFTkSuQmCC" alt="">
+                        </div>
+                        <h1 class="my-1 text-center">The best fitness Gym in the town is here</h1>
+                        <p class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                            error corporis fugit dolore adipisci aperiam omnis nisi dolores hic eius in ex id iure, ea
+                            sunt asperiores et voluptatibus dignissimos autem maiores molestias dolor rem delectus
+                            quidem! Inventore.</p>
+                            <!-- Display the countdown timer in an element -->
+                            <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Join now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="gymimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrT616RQqxFSh5GMl3yD-fREfK_aJ9ibBA2A&usqp=CAU" alt="">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center my-2">Pricing</h1>
+                <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi debitis provident
+                    suscipit temporibus modi voluptatem. Assumenda aspernatur ad nihil quasi expedita eligendi atque?
+                    Dolorum eum deserunt dicta iste beatae commodi, doloribus expedita hic recusandae, tempora illum
+                    consequuntur? Necessitatibus voluptate animi repellendus reiciendis!</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Free</h2>
+                        <ul>
+                            <li class="highlighted">₹0/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li class="highlighted">₹150/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Enterprise</h2>
+                        <ul>
+                            <li class="highlighted">₹500/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th></th><th>Free</th>
+                          <th>Pro</th>
+                          <th>Enterprise</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Public</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Private</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Permissions</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Sharing</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Unlimited members</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Extra security</th>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </section>
+            <hr>
+        </main>
+        
+
+    </div>
+</body>
+
+</html>
